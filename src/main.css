@@ -1,0 +1,38 @@
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    overflow: hidden;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 180px;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+}

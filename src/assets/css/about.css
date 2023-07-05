@@ -1,0 +1,20 @@
+.about{
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: url("../images/Banner.png") no-repeat center/cover;
+}
+
+.about__content{
+    padding:60px 180px 60px !important;
+    background-color: white;
+}
+
+.about__title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.about__text {
+    line-height: 24px;
+}
