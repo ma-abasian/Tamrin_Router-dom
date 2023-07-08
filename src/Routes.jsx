@@ -1,6 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 import {Home} from "./Home.jsx";
 import {About, Contact, FoodDetail, Menu} from "./components";
+import NotFound from "./components/NotFound.jsx";
 
 
 export const Router = () => {
@@ -12,6 +13,7 @@ export const Router = () => {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/menu/:id" element={<FoodDetail/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </div>
   );

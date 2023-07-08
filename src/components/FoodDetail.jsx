@@ -1,13 +1,20 @@
 import {useNavigate, useParams} from "react-router-dom";
 import '../assets/css/foodDetail.css'
 import {foodData} from './foodData.js';
+import NotFound from "./NotFound.jsx";
 
 export const FoodDetail = () => {
   const {id} = useParams()
   const navigate = useNavigate()
 
   const food = foodData.find( f => f.id === Number(id))
-
+  if(!food) {
+    return (
+        <div>
+          <NotFound/>
+        </div>
+    )
+  }
   return (
       <div className="detail">
         <button className="detail__button" onClick={() => navigate("/menu")}>❌</button>
